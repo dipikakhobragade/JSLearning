@@ -19,7 +19,7 @@ age = "38";
  console.log(age);
 
 var university;
- university = "RTMNU";
- console.log(university);
-var university = "RTMNU";
- console.log(university);
+//  university = "RTMNU";
+//  console.log(university);
+// var university = "RTMNU";
+//  console.log(university);
