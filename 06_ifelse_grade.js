@@ -24,7 +24,7 @@ voteEligibility(200);
 console.log(`-------------------------------------------------`);
 
 function gradeCalculation(marks) {
-  if (marks <= 0 || marks >= 100 || typeof marks != "number") {
+  if (marks <= 0 || marks >= 100 || (typeof marks != "number") || isNaN(marks)) {
     console.log(`Please provide valid marks : ${marks} is not valid marks`);
   } else{
 
