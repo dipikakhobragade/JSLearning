@@ -32,30 +32,29 @@ console.log(
 
 console.log(`------------------------------------------------------------`);
 
-var lastWordCharCount = function (str) {
-  var lastWord = "";
-  for (let index = str.length; index >= 0; index--) {
+function lastWordCharCount(str) {
+  var lastWordCount = 0;
+  for (let index = str.length - 1; index >= 0; index--) {
     var char = str.charAt(index);
-    lastWord = lastWord + char;
+
     if (char == " ") {
       break;
     }
+    lastWordCount = lastWordCount + 1;
   }
-  return lastWord;
-};
+  return lastWordCount;
+}
 var result = lastWordCharCount("Javascript is the language of Internet");
 console.log(
-  `Length of the last word count in "Javascript is the language of Internet"- ${result.length}`
+  `Last word count in "Javascript is the language of Internet"- ${result}`
 );
 
 var result = lastWordCharCount("I am Angular Developer");
-console.log(
-  `Length of the last word count in "I am Angular Developer" - ${result.length}`
-);
+console.log(`Last word count in "I am Angular Developer" - ${result}`);
 
 var result = lastWordCharCount(
   "Hard work and commitment is the key of success"
 );
 console.log(
-  `Length of the last word count in "Hard work and commitment is the key of success"- ${result.length}`
+  `Last word count in "Hard work and commitment is the key of success"- ${result}`
 );

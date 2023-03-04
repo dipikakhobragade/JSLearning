@@ -15,3 +15,10 @@ console.log("Last chars of index :", charAtLastIndex);
 console.log("Find the index by chars value ");
 var indexOfM = greet.indexOf('M');
 console.log("Index of chrs M is:",indexOfM);
+
+var string = greet.split(" ");
+var length = greet.charAt(string.length-1);
+console.log(string);
+console.log(length);
+
+
