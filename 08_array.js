@@ -1,6 +1,8 @@
 
 var arrayOfNumbers =[0,2,4,5,6,7,8];
 console.log(arrayOfNumbers);
+console.log(arrayOfNumbers.length);
+console.log(arrayOfNumbers.length-2);
 console.table(arrayOfNumbers);
 const totalNumberOfElements = arrayOfNumbers.length
 console.log(`Total Number of Elements Available in Array ${totalNumberOfElements}`);
@@ -76,4 +78,27 @@ var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];
 arrayOfNumbers.splice(2, 2 ,50,60);
 console.log(arrayOfNumbers);
 
+
+console.log("===== Traversing  ====================");
+var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ];
+let sum = 0; // 10
+for (let index = 0; index < arrayOfNumbers.length; index++) {//1
+    const element = arrayOfNumbers[index];
+   sum = sum + element;// sum = 0 + 20
+    // console.log(element);
+}
+console.log(`Sum of an Array element is: ${sum}`);
+
+const arrayNumbers = [20,31,40,25,23,11,29,9,60,2,11];
+const oddArray =[];
+for (let index = 0; index < arrayNumbers.length; index = index++)
+{
+    const element = arrayNumbers[index];
+    if (element%2!=0) {
+        oddArray.push(element);
+    }
+    
+   
+}
+console.log(`odd no of Array - ${oddArray}`);
 
