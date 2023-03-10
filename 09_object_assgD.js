@@ -8,17 +8,19 @@ const professor ={
     degree : "BE in Information Technology",
     
     degrees : {
-        engineering : 'CSC',
-        master : 'MCS',
-        PHD :'Adv Computing'
+        engineering : "CSC",
+        master : "MCS",
+        PHD :"Adv Computing"
 
     },
 
     certificates : [ "Hacker Rank Participation","Certificate in IFE course","Certificate in adv programming"],
 
-    show : function(){
+     degreeDetails : function(){
 
-        console.log('total degrees are - CSC,MCS,Adv Computing');
+        return `Total degreed are - Engineering ${this.degrees.engineering}, Master ${this.degrees.master}, PHD ${this.degrees.PHD}`
+
+        
     }
 
 
@@ -32,7 +34,8 @@ console.log(professor.degrees);
 console.log(`--------One Array Added-------`);
 console.log(professor.certificates);
 console.log(`-----Function Created------`);
-professor.show()
+let result =professor.degreeDetails()
+console.log(result);
 console.log(`----- New Property "totalexperience" added`);
 professor.totalExperience = "14 years";
 console.log(professor);
