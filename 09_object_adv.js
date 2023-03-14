@@ -51,7 +51,8 @@ console.table(mergedObject);
  const mergedObject1 = Object.assign({}, student, address);
   console.table(mergedObject1); 
   // Second way 
-  const newObject1 = {}; Object.assign(newObject, student, address); 
+  const newObject1 = {};
+   Object.assign(newObject, student, address); 
   console.table(newObject1); 
   // Third way 
   Object.assign(student, address); 

@@ -92,17 +92,10 @@ console.log(vnit);
 const DrBRAmbedkar = new College("Dr B R Ambedkar", "Aurangabad","Law","Marathwada University");
 console.log(DrBRAmbedkar);
 
-// const college1 ={
-//     collegeName:"SRCE",
-//     city:"Nagpur",
-//     department:"E & TC",
-//     university:"RTMNU"
 
-
-// 
 console.log(`--------------Traversing using for in loop with one Argument------------------`);
 function traverseObject(college) {
-    const array = [];
+    
   for (const key in college) {
   if (Object.hasOwnProperty.call(college, key)) {
     const element = college[key];
@@ -121,45 +114,6 @@ traverseObject(vnit);
 console.log(`----------------------------------------`);
 traverseObject(DrBRAmbedkar);
 
-// const college2 ={
-//     collegeName:"COEP",
-//     city:"Pune",
-//     department:"IT",
-//     university:"Pune University"
-// }
-
-// function traverseObject(college2) {
-//     const array = [];
-//   for (const key in college2) {
-//   if (Object.hasOwnProperty.call(college2, key)) {
-//     const element = college2[key];
-//     console.log(`${key} : ${element}`);
-//     //array.push(key);
-//     //console.log(array.push(key));
-//   }
-// }
-    
-
-// }
-// traverseObject(coep);
-// traverseObject(vnit)
-
-// const college3 ={
-//     collegeName:"VNIT",
-//     city:"Mumbai",
-//     department:"MECH",
-//     university:"Mumbai University"
-
-
-// }
-// const college4 ={
-//     collegeName:"Dr B R Ambedkar",
-//     city:"Aurangabad",
-//     department:"Law",
-//     university:"Marathwada University"
-
-
-// }
 
 console.log(`----------------Prime No-----------`);
 const number = 11;
