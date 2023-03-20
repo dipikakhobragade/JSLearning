@@ -26,7 +26,7 @@ const array_employees = [
     emp_sonali,
     emp_monika,
     emp_viny,
-    emp_anil
+    emp_mahi
 
 ];
  console.log(`---------------------Step 1--------------------`);
@@ -37,7 +37,6 @@ const array_employees = [
     }
     
  }
-
 
  console.log(`--------------------Step 2-------------------`);
 
@@ -52,8 +51,8 @@ const array_employees = [
  console.log(`------------------------Step 3----------------------`);
 
  for (const element of array_employees) {
-     const empname = element.emp_name;
-        if (empname.charAt(0) == "R") {
+     const empName = element.emp_name;
+        if (empName.charAt(0) == "R") {
           console.log(
             `Employee Name : ${element.emp_name} Id: ${element.emp_id} Department: ${element.emp_dept} Salary: ${element.emp_salary} Company: ${element.emp_company}`
           );
@@ -66,7 +65,7 @@ console.log(`------------------------------Step4--------------------`);
 
 for (const element of array_employees) {
     //const empSalary = element.emp_salary;
-    if (element.emp_salary > 75000) {
+    if ( element.emp_salary > 75000) {
       console.log(
         `Employee Name : ${element.emp_name} Company: ${element.emp_company} Salary: ${element.emp_salary}`
       );
@@ -87,8 +86,9 @@ for (const element of array_employees) {
 console.log(`------------------Step 6------------`);
 
 for (const element of array_employees) {
-    if (element.emp_company =="Infy") {
-        console.log(`Employee Name : ${element.emp_name} Id: ${element.emp_id} Department: ${element.emp_dept} Salary: ${element.emp_salary} Company: ${element.emp_company}`);
+    if (element.emp_company == "Infy") {
+        console.log(`Employee Name : ${element.emp_name} Id: ${element.emp_id} Department: ${element.emp_dept} Salary: ${element.emp_salary} 
+        Company: ${element.emp_company}`);
         
     }
     
