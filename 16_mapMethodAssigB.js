@@ -54,3 +54,11 @@ const arrayNameTransformed3 = arrayEmployee.map((employee) => {
     return console.log(employee.emp_name);
   }
 });
+
+// const arrayTransformed = [];
+// const arrayCompany=arrayEmployee.map((employee)=>{
+// if (employee.empCompany=="TCS") {
+//     arrayTransformed.push(employee.emp_name);
+// }
+// })
+// console.log(`The List of Employee Name working In TCS Company : ${arrayTransformed}`);
