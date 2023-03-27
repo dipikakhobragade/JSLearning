@@ -9,6 +9,8 @@ console.log(sortedArray);
 console.log("======= Sorting array of numbers =========");
 const array = [5, 6, 3, 44, 104, 302, 15];// 
 console.log(array);
+ array.sort();
+console.log(array);
 // Custom sorting to sort the elements in ascending order
 array.sort( (a, b) => { // 3  6
     return a>b ? 1 : -1;
