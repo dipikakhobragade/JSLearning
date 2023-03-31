@@ -11,6 +11,7 @@ console.log("====== API getElementsByClassName() to select element class Name  =
 const elementLi =document.getElementsByClassName("liItem");
 console.log(elementLi[1].innerHTML);
 
+console.log("====== API querySelector() to select element by id  =====");
 const elementProfileByQuery = document.querySelector("#profile");
 console.log(elementProfileByQuery);
 
@@ -20,12 +21,23 @@ console.log(elementByQuery);
 
 console.log("====== API querySelectorAll() to select element by class  =====");
 const elementsByQuery = document.querySelectorAll(".liItem");
-console.log(elementsByQuery);
 elementsByQuery[3].innerHTML = "Oracle Database";
 console.log(elementsByQuery[3]);
 
+console.log("====== Changing the attribute of an element =====");
+const elementMyProfile = document.querySelector("#myProfile");
+elementMyProfile.setAttribute("href", "https://www.linkedin.com/");
+console.log(elementMyProfile);
 
+console.log("====== Changing the CSS properties =====");
+const elementTechStack = document.querySelector("#techStack");
+elementTechStack.style.color = "red";
+elementTechStack.style.fontFamily = "Arial";
 
+console.log("====== Remove Element =====");
+const elementDivProject = document.querySelector("#divProject");
+const elementProject = document.querySelector("#project");
+elementDivProject.removeChild(elementProject);
 
 console.log("====== Adding Element =====");
 const elementDiv = document.querySelector("#divProject");
@@ -38,12 +50,31 @@ elementDiv.appendChild(elementP);
 const elementAddress = document.querySelector("#address");
 elementAddress.addEventListener("click", ()=> {
     console.log("Listening click event.....");
+    // alert("You have clicked on address");
+    const inputValue = prompt("This is the title", "Default value");
+    console.log(inputValue);
+
 });
 
 elementAddress.addEventListener("mouseover", () => {
     console.log("Mouse over....");
+    elementAddress.style.color = "red";
 });
 
+
 function show(){
-    console.log("Hey you click me.....");
+    console.log("Click event.....");
 }
+
+const isEvenButton = document.querySelector("#isEvenButton");
+isEvenButton.addEventListener('click', () => {
+    const inputValue = prompt("Please enter number to check..", 0);
+    console.log(inputValue);
+    const result = inputValue%2==0 ? true : false;
+    if(result){
+        alert("Given Number is Even");
+    }else{
+        alert("Given number is Odd");
+    }
+} );
+

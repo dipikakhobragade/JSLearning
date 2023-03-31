@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> EXERCISE TIME ! </title>
+</head>
+<body>
+    <main>
+        <div id ="overview">
+            <h1> HTML and Javascript are crucial technologies </h1>
+            <p>The web would not work without them....</p>
+        </div>
+        <div id ="advantages">
+            <ul>
+                <li>Flexible</li>
+                <li>Available</li>
+                <li>Magical</li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        console.log('=====Step 1. mainHeading should store the <h1> element====');
+        const mainHeading = document.getElementsByTagName("h1")
+        console.log(mainHeading[0].innerHTML);
+        console.log('=====Step 2.secondAdvantage should store the second <li> element====');
+        const secondAdvantage = document.getElementsByTagName("li");
+        console.log(secondAdvantage[1].innerHTML);
+        console.log('=====Step 3. advDiv should store the <div> with the id advantages====');
+        const advDiv = document.getElementById("advantages");
+        console.log(advDiv.innerHTML);
+    </script>
+</body>
+</html>
