@@ -16,12 +16,14 @@ console.log("Type of variable age:",typeOfAge);
 var typeOfWeight=typeof weight;
 console.log("my weight:",typeOfWeight);
 
+var name1 ='dipika';
+var dataType = typeof name1;
+console.log(dataType);
 
 
 var graduation;
 console.log("Value of  graduation variable is: ", graduation);
 console.log("typeOf graduation is: ", graduation);
-
 
 
 console.log("Swapping variables");

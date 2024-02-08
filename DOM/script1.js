@@ -78,3 +78,20 @@ isEvenButton.addEventListener('click', () => {
     }
 } );
 
+
+const isEvenButton1 = document.querySelector("#isEvenButton");
+isEvenButton1.addEventListener('click', () => {
+    const inputValue = prompt("Please enter number to check..", 0);
+    const givenNum = +inputValue;
+    if (inputValue==null || isNaN(givenNum) || givenNum<0) {
+        alert("Invalid value");
+    }else{
+        const result = inputValue%2==0 ? true : false;
+        if(result){
+            alert("Given Number is Even");
+        }else{
+            alert("Given number is Odd");
+        }
+    }
+} );
+
